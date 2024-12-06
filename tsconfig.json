@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",              // Use a modern version of JavaScript
+      "module": "commonjs",            // Use CommonJS module system
+      "esModuleInterop": true,         // Ensure compatibility between CommonJS and ES Modules
+      "skipLibCheck": true,            // Skips type checking for declaration files
+      "strict": true,                  // Enable strict type checking options
+      "outDir": "./dist",              // Transpile into the "dist" folder
+      "rootDir": "./src",              // Source code is under the "src" folder
+      "resolveJsonModule": true,       // Allow importing of JSON modules
+      "noEmitOnError": true            // Don't emit output if there are errors
+    },
+    "include": ["src/**/*.ts"],          // Only include TypeScript files in the "src" folder
+    "exclude": ["node_modules"]          // Exclude the node_modules folder
+  }
+  
