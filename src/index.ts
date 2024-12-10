@@ -3,13 +3,14 @@ import cors from "cors";
 import connectDB from "./config/db";
 import populationData from "../src/routes/populationRoute";
 import countriesData from "../src/routes/countriesRoute";
+import userAuth from "../src/routes/userRoute";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/v1', populationData, countriesData);
+app.use('/api/v1', populationData, countriesData, userAuth);
 
 app.get("/", (req: Request, res: Response) => {
   res.json({ test: "Ok" });
